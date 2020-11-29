@@ -1,5 +1,7 @@
 FROM python:3.8.6
 RUN mkdir /app
-COPY hello_world.py /app/hello_world.py
+COPY pipeline/model/model.py /app/model.py
+COPY pipeline/preprocessing/preprocessing.py /app/preprocessing.py
+COPY pipeline/utils/utils.py /app/utils.py
 WORKDIR /app
-CMD ["python", "hello_world.py"]
+CMD ["python", "model.py"]

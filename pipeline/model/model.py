@@ -1,1 +1,1 @@
-predict
+print("predict")
