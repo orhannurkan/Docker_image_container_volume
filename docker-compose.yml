@@ -1,0 +1,8 @@
+version: "1"
+services:
+  microservice1:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - "."
